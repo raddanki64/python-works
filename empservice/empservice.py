@@ -19,10 +19,10 @@ import cityservice
 
 
 conn = psycopg2.connect(
-    host="localhost",
-    database="postgres",
-    user="postgres",
-    password="postgres")
+    host="<host>",
+    database="<db>",
+    user="<dbuser>",
+    password="<dbpassword>")
 
 log.info("Connected to the database")
 

@@ -16,9 +16,9 @@ def get_all_cities():
 
 
     ddb = boto3.resource('dynamodb',
-                        region_name='us-east-1',
-                        aws_access_key_id="AKIAQWKJFYS2Q6NBMIWH",
-                        aws_secret_access_key="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")
+                        region_name='<region>',
+                        aws_access_key_id="<access-key-id>>",
+                        aws_secret_access_key="<access-key>")
 
     print(list(ddb.tables.all()))
     log.info("Established dynamo boto resource")
